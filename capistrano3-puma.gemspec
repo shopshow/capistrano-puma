@@ -10,12 +10,12 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/seuros/capistrano-puma'
   spec.license = 'MIT'
 
-  spec.required_ruby_version = '>= 2.5'
+  spec.required_ruby_version = '>= 2.4'
 
   spec.files = Dir.glob('lib/**/*') + %w(README.md CHANGELOG.md LICENSE.txt)
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'capistrano', '~> 3.7'
+  spec.add_dependency 'capistrano', '~> 3.4.1'
   spec.add_dependency 'capistrano-bundler'
   spec.add_dependency 'puma', '>= 5.1', '< 7.0'
   spec.post_install_message = %q{
